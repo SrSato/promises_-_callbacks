@@ -1,3 +1,3 @@
-# Promises & Callbacks Nivell2 Exercici 2
+# Promises & Callbacks Nivell2 Exercici 3
 
-Prometiendo encontrar el sueldo de una persona
+Prometiendo prometer.
