@@ -22,18 +22,23 @@ let salaries = [{
 
 let getEmpleado = (id)=>{
 	let empleado =new Promise((resolve,reject) =>{	
-		employees.forEach(busca);
-		function busca(employe){
-			if(employe.id==id){			
-				resolve(employe.name);
+		employees.forEach(employe=>{
+			if(employe.id==id){	
+				salaries.forEach(mount=>{
+					if(mount.id==id){
+						resolve(employe.name +" "+ mount.salary);
+					}
+				})			
+				reject("El id no aparece en el registro de sueldos");
 			}
-		}
-		reject("No se encuentra ese id de empleado");	
+		});
+		
+		reject("El id no aparece en el registro de empleados");	
 	});
 	return empleado;
 }
 
-getEmpleado(1).then((mensajito)=>{
+getEmpleado(3).then((mensajito)=>{
 	console.log("Todo bien. Da este mensaje: "+mensajito);
 }).catch((mensajito)=>{
 	console.log("Algo se ha roto. Esto pasa: "+mensajito);
