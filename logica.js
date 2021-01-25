@@ -20,25 +20,19 @@ let salaries = [{
     salary: 2000
 }];
 
-let getEmpleado = (id)=>{
-	let empleado =new Promise((resolve,reject) =>{	
-		employees.forEach(employe=>{
-			if(employe.id==id){	
-				salaries.forEach(mount=>{
-					if(mount.id==id){
-						resolve(employe.name +" "+ mount.salary);
-					}
-				})			
-				reject("El id no aparece en el registro de sueldos");
-			}
-		});
-		
-		reject("El id no aparece en el registro de empleados");	
+let getSalario =(empleado)=>{
+	let salario = new Promise((resolve,reject)=>{
+		salaries.forEach(mount=>{
+			if(mount.id==empleado.id){
+					resolve(mount.salary);
+				}
+			});
+		reject("Esta personita no cobra");	
 	});
-	return empleado;
+	return salario;
 }
 
-getEmpleado(3).then((mensajito)=>{
+getSalario(employees[2]).then((mensajito)=>{
 	console.log("Todo bien. Da este mensaje: "+mensajito);
 }).catch((mensajito)=>{
 	console.log("Algo se ha roto. Esto pasa: "+mensajito);

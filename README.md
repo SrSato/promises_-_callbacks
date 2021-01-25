@@ -1,3 +1,3 @@
-# Promises & Callbacks Nivell2 Exercici 1
+# Promises & Callbacks Nivell2 Exercici 2
 
-Prometiendo encontrar a gente.
+Prometiendo encontrar el sueldo de una persona
