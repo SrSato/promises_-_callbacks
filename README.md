@@ -1,3 +1,3 @@
-# Promises & Callbacks Nivell1 Exercici 2
+# Promises & Callbacks Nivell2 Exercici 1
 
-Primer uso de callback.
+Prometiendo encontrar a gente.
