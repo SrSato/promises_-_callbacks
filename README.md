@@ -1,3 +1,3 @@
-# Promises & Callbacks Nivell1 Exercici 1
+# Promises & Callbacks Nivell1 Exercici 2
 
-Promesa con sus dos salidas (cumplida o rechazada) y con su llamada externa.
+Primer uso de callback.
